@@ -5,7 +5,7 @@ const mongoose=require('mongoose');
 module.exports=()=>{
     mongoose.connect('mongodb://movie_user:123456rt@ds125181.mlab.com:25181/movie-api');
     mongoose.connection.on('open',()=>{
-        console.log('MongoDB:Connected');
+        //console.log('MongoDB:Connected');
     })
 mongoose.connection.on('error',(err)=>{
         console.log('MongoDB:ERROR',err);
